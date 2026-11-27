@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <PackageId>Clc.Cloudflare.AspNetCore</PackageId>
+    <Description>Resolve visitor IP addresses behind trusted Cloudflare Tunnel connectors using ASP.NET Core forwarded headers.</Description>
+    <Authors>Central Library Consortium</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/clcdpc/clc-cloudflare-aspnetcore</PackageProjectUrl>
+    <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>aspnetcore;cloudflare;tunnel;forwarded-headers;clc</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <InternalsVisibleTo Include="Clc.Cloudflare.AspNetCore.Tests" />
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <None Include="../../LICENSE" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>

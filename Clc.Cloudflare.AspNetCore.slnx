@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Clc.Cloudflare.AspNetCore/Clc.Cloudflare.AspNetCore.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Clc.Cloudflare.AspNetCore.Tests/Clc.Cloudflare.AspNetCore.Tests.csproj" />
+  </Folder>
+</Solution>
