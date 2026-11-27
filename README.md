@@ -52,7 +52,7 @@ Warnings contain the category and immediate peer address. Event 1201 indicates a
 
 ## Build and release
 
-Run `dotnet build -c Release`, `dotnet test --solution Clc.Cloudflare.AspNetCore.slnx -c Release`, then `dotnet pack src/Clc.Cloudflare.AspNetCore -c Release -o artifacts/packages` and `pwsh ./scripts/Test-Package.ps1` to verify the archive and run a separate package-backed web application.
+Run `dotnet build -c Release`, `dotnet test --solution Clc.Cloudflare.AspNetCore.slnx -c Release`, then `dotnet pack src -c Release -o artifacts/packages` and `pwsh ./scripts/Test-Package.ps1` to verify the archive and run a separate package-backed web application.
 
 GitHub Actions validates pull requests and pushes to `master` on Windows and Linux. Local builds use `0.0.0-local`, and untagged CI uses `0.0.0-ci.<run>.<attempt>`. Only an explicit release tag such as `v1.2.3` or `v1.2.3-beta.1` can publish. The publish job verifies the tested artifact's checksum and exchanges a GitHub OIDC token for a short-lived NuGet key.
 

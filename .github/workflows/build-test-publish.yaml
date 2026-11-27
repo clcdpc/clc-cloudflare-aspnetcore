@@ -24,7 +24,7 @@ env:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_VERSION: 10.0.303
   BUILD_CONFIGURATION: Release
-  PACKAGE_PROJECT: src/Clc.Cloudflare.AspNetCore/Clc.Cloudflare.AspNetCore.csproj
+  PACKAGE_PROJECT: src/Clc.Cloudflare.AspNetCore.csproj
   PACKAGE_OUTPUT_DIR: artifacts/packages
   NUGET_SOURCE: https://api.nuget.org/v3/index.json
 
